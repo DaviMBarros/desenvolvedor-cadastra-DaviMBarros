@@ -1,1 +1,13 @@
 @import "reset";
+
+:root {
+    --Color-primary: #FB953E;
+    --Color-grey-1: #000000;
+    --Color-grey-2: #00000080;
+    --Color-grey-3: #666666;
+}
+
+body {
+    width: 100vw;
+    // background-color: #000000;
+}
