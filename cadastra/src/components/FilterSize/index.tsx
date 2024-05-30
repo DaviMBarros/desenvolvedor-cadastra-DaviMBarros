@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { GlobalContext } from "../../providers/GlobalContext/GlobalContext";
 
 const FilterSize = () => {
-    const { ProductsList, setProductsList, setCheck, check, originalList} = useContext(GlobalContext);
+    const { setProductsList, originalList } = useContext(GlobalContext);
     
     
     

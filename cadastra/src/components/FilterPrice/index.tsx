@@ -8,8 +8,6 @@ const FilterPrice = () => {
     const filteredPrices = (e: any) => {
         const FilterPrice = ProductsList.filter((c) => c.price > e.target.min  && c.price <= e.target.max)
         setProductsList(FilterPrice)
-        console.log(FilterPrice)
-        // if ()
         setCheck(e.target.value)
     }
 

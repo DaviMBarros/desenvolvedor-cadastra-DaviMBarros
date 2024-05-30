@@ -2,22 +2,18 @@ import style from "./style.module.css"
 
 import { useContext, useState } from "react";
 import { GlobalContext } from "../../providers/GlobalContext/GlobalContext";
-import InputFilter from "../InputFilter";
-// import FilterColorsMobile ../FilterColorsMobile";
 import FilterSize from "../FilterSize";
 import FilterPrice from "../FilterPrice";
 import FilterColorsMobile from "../FilterColorsMobile";
-// import { IProduct } from "../../providers/GlobalContext/@type";
 
 const ModalFilter = () => {
-    const { setOpenModalFilter, setProductsList, originalList, setCheck, check} = useContext(GlobalContext);
+    const { setOpenModalFilter, check } = useContext(GlobalContext);
     const [isOpenFilterColors, setIsOpenFilterColors] = useState(false)
     const [isOpenFilterPrice, setIsOpenFilterPrice] = useState(false)
     const [isOpenFilterSize, setIsOpenFilterSize] = useState(false)
 
     const closeModal = () => {
         setOpenModalFilter(false)
-        console.log("adssadasjdajsfsajajfajfjsajf")
     }
 
     

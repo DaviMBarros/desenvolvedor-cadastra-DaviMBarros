@@ -6,7 +6,7 @@ const InputFilter = ({description, eventClick, value}: any) => {
     const { check } = useContext(GlobalContext);
 
     return (
-        <div>
+        <div className={style.checkbox}>
             <input className={style.checkbox} type="checkbox" value={value} checked={check === value} onChange={eventClick}/>
             <label className={style.label}>{description}</label>
         </div>

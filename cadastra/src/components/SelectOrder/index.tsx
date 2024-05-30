@@ -20,13 +20,11 @@ const SelectOrder = () => {
 
         } else if (button == "Maior preço") {
             ProductsList.sort((a, b) => b.price - a.price);
-
             setProductsList(ProductsList)
             setInit([...ProductsList.slice(0, cont)])
 
         } else if (button == "Menor preço") {
             ProductsList.sort((a, b) => a.price - b.price);
-
             setProductsList(ProductsList)
             setInit([...ProductsList.slice(0, cont)])
         };

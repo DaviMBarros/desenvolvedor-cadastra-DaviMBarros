@@ -1,8 +1,6 @@
 import style from "./style.module.css"
-
 import { useContext } from "react";
 import { GlobalContext } from "../../providers/GlobalContext/GlobalContext";
-// import { IProduct } from "../../providers/GlobalContext/@type";
 
 const ModalOrder = () => {
     const { setOpenModalOrder, ProductsList, setProductsList, init, setInit, cont, setCont} = useContext(GlobalContext);
@@ -23,29 +21,21 @@ const ModalOrder = () => {
                 }
                 return 0;
             })
-            
             setProductsList(ProductsList)
             setInit([...ProductsList.slice(0, cont)])
-
-            // console.log(ProductsList)
 
         } else if (button == "Maior preço") {
             ProductsList.sort((a, b) => b.price - a.price);
-
             setProductsList(ProductsList)
             setInit([...ProductsList.slice(0, cont)])
-            // console.log(ProductsList)
 
         } else if (button == "Menor preço") {
             ProductsList.sort((a, b) => a.price - b.price);
-
             setProductsList(ProductsList)
-            // console.log(ProductsList)
             setInit([...ProductsList.slice(0, cont)])
-        };
-        // console.log(ProductsList)
-    
+        };    
     }
+
     return (
         <div className={style.modal} role="dialog">
             <div className={style.headerModal}>

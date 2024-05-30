@@ -41,14 +41,6 @@ const Main = () => {
                 </div>    
                 <ListItems/> 
             </div>
-           {/* { teste == false ? <span onClick={toggle}>Ver todas as cores</span> : null} */}
-            {/* { isOpen && (
-                <div>
-                </div>
-            )} */}
-            {/* {isOpen && (
-            )} */}
-
         </main>
         </>
 

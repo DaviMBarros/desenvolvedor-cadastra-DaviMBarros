@@ -8,16 +8,14 @@
 }
 
 body {
-    /* padding-top: 200px; */
-    /* width: 100vw; */
     min-height: 100vh;
 
-    /* background-color: #000000; */
     font-family: "Open Sans", sans-serif;
 }
 
 #root {
     min-height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
