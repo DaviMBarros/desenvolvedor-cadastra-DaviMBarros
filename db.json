@@ -102,13 +102,43 @@
     },
     {
       "id": "11",
-      "name": "Camisa Transparente",
-      "price": 398.0,
-      "parcelamento": [5, 30],
+      "name": "Pochete Clutch",
+      "price": 99.0,
+      "parcelamento": [3, 33],
       "color": "Preto",
-      "image": "/img/img_9.png",
-      "size": ["P"],
-      "date": "2000-11-17"
+      "image": "/img/img_10.png",
+      "size": ["M"],
+      "date": "2003-12-17"
+    },
+    {
+      "id": "12",
+      "name": "Pochete Clutch",
+      "price": 99.0,
+      "parcelamento": [3, 33],
+      "color": "Preto",
+      "image": "/img/img_10.png",
+      "size": ["M"],
+      "date": "2003-12-17"
+    },
+    {
+      "id": "13",
+      "name": "Pochete Clutch",
+      "price": 99.0,
+      "parcelamento": [3, 33],
+      "color": "Preto",
+      "image": "/img/img_10.png",
+      "size": ["M"],
+      "date": "2003-12-17"
+    },
+    {
+      "id": "14",
+      "name": "Pochete Clutch",
+      "price": 99.0,
+      "parcelamento": [3, 33],
+      "color": "Preto",
+      "image": "/img/img_10.png",
+      "size": ["M"],
+      "date": "2003-12-17"
     }
   ]
 }
