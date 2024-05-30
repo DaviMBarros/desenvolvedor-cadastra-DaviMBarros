@@ -9,6 +9,10 @@
     /* position: relative; */
 }
 
+.containerTitle {
+    display: none;  
+}
+
 .title {
     font-size: 32px;
 
@@ -19,11 +23,13 @@
     margin-bottom: 20px;
 }
 
-.teste {    
+.divMobile {    
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .styleButtons {
     /* height: 49px; */
     width: 100%;
@@ -49,4 +55,40 @@
     border: var(--Color-grey-3) solid 1px;
 
     cursor: pointer;
+}
+
+.mainContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.containerFilters {
+    display: none;
+}
+
+@media (min-width: 1250px) {
+    .divMobile {
+        display: none;
+
+    }
+    
+    .containerTitle {
+        display: block;          
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 1060px;
+    }
+
+    .containerFilters {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }

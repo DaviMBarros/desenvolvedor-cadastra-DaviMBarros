@@ -25,4 +25,12 @@ export interface IGlobalContext {
     setInit: React.Dispatch<React.SetStateAction<IProduct[]>>
     cont: number
     setCont: React.Dispatch<React.SetStateAction<number>>
+    openModalFilter: boolean
+    setOpenModalFilter: React.Dispatch<React.SetStateAction<boolean>>
+    addFilter: string[]
+    setAddFilter: React.Dispatch<React.SetStateAction<string[]>>
+    check: string
+    setCheck: React.Dispatch<React.SetStateAction<string>>
+    originalList: IProduct[]
+    setOriginalList: React.Dispatch<React.SetStateAction<IProduct[]>>
 }

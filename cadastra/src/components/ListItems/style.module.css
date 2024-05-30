@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: column;
 
+    width: 100%;
 }
 
 .containerList {
@@ -95,5 +96,11 @@
     .containerList li {
         width: 195px;
         height: 424px;
+    }
+}
+
+@media (min-width: 1155px) {
+    .container {
+        width: 65%;
     }
 }

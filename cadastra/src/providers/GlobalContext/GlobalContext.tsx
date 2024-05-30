@@ -6,10 +6,13 @@ export const GlobalContext = createContext({} as IGlobalContext)
 
 export const GlobalProvider = ({ children }: IGlobalProviderProps) => {
     const [ProductsList, setProductsList] = useState<IProduct[]>([])
+    const [ originalList , setOriginalList] = useState<IProduct[]>([])
     const [count, setCount] = useState(0)
     const [openModalOrder, setOpenModalOrder] = useState(false)
+    const [openModalFilter, setOpenModalFilter] = useState(false)
     const [ cont, setCont ] = useState(9)
-    
+    const [ addFilter, setAddFilter ] = useState<string[]>([])
+    const [check, setCheck ] = useState("")
     const [ init, setInit ] = useState<IProduct[]>([])
 
     useEffect( () => {
@@ -17,6 +20,7 @@ export const GlobalProvider = ({ children }: IGlobalProviderProps) => {
             const getProducts = async () => {
                 const { data } = await api.get<IProduct[]>("products/")
                 setProductsList(data)
+                setOriginalList(data)
             }
             getProducts()
 
@@ -36,7 +40,15 @@ export const GlobalProvider = ({ children }: IGlobalProviderProps) => {
             init,
             setInit,
             cont,
-            setCont
+            setCont,
+            openModalFilter,
+            setOpenModalFilter,
+            addFilter,
+            setAddFilter,
+            check, 
+            setCheck,
+            originalList,
+            setOriginalList
         }}>
             {children}
         </GlobalContext.Provider>
